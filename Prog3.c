@@ -11,9 +11,9 @@ int main(){
     printf("Porfavor diga quanto consumiu de eletricidade este mes\n");
     scanf(" %f", &consumo);
     //calcular valor a pagar sem iva
-    valorPagar = potencia + consumo * Preco;
+    valorPagar = potencia + (consumo * Preco);
     iva = valorPagar * 0.18;
-    //valor a pagar com iva
+    //valor a pagar com iva.
     precoFinal = valorPagar + iva;
     
     printf("Tera que pagar (incuindo iva) %f\n", precoFinal);
